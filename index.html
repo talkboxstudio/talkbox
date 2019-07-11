@@ -146,7 +146,7 @@
                 Let us do the dirty work. We make it easier for you to consistently deliver next-level podcast episodes to your growing audience.<br><br>
                 With Talkbox, you can streamline your workflow and rest assured that your sound is great. </p>
 
-              <a class="btn btn-common page-scroll"" href="#features">learn more</a>
+              <a class="btn btn-common page-scroll" href="#features">learn more</a>
             </div>
           </div>
           <!-- End Col -->
@@ -307,7 +307,7 @@
         <div class="row">
           <!-- Start Col -->
           <div class="col-lg-6 col-md-12">
-          <form id="contactForm" name="contactform" method="post" action="form-process.php">
+          <form id="contactForm" name="contactform"  action="form-process.php" method="post">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -317,21 +317,15 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="msg_subject" required data-error="Please enter your subject">
+                  <input type="text" placeholder="Your Email" id="msg_subject" class="form-control" name="mail" required data-error="Please enter your email">
                   <div class="help-block with-errors"></div>
                 </div> 
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required data-error="Please enter your subject">
                   <div class="help-block with-errors"></div>
                 </div>                                 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Project" id="project" class="form-control" name="project" required data-error="Please enter your project name">
-                  <div class="help-block with-errors"></div>
-                </div> 
               </div>
               <div class="col-md-12">
                 <div class="form-group"> 
@@ -339,7 +333,7 @@
                   <div class="help-block with-errors"></div>
                 </div>
                 <div class="submit-button">
-                  <button class="btn btn-common" id="submit" type="submit">Submit</button>
+                  <button class="btn btn-common" id="submit" type="submit" name="submit">Send Mail</button>
                   <div id="msgSubmit" class="h3 hidden"></div> 
                   <div class="clearfix"></div> 
                 </div>
