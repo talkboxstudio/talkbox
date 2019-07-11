@@ -164,8 +164,7 @@
     width: 100px; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .bg-inverse {
-    background: #191c1e; }
+  .bg-inverse {}
   .navbar {
     padding: 0; }
   .navbar-brand img {
