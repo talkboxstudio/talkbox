@@ -23,6 +23,13 @@ if (empty($_POST["msg_subject"])) {
     $msg_subject = $_POST["msg_subject"];
 }
 
+// MSG budget
+if (empty($_POST["Project"])) {
+    $errorMSG .= "Subject is required ";
+} else {
+    $project = $_POST["project"];
+}
+
 
 // MESSAGE
 if (empty($_POST["message"])) {
@@ -32,7 +39,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "barryorvin@gmail.com";
+$EmailTo = "barry@talkbox.studio";
 $Subject = "New Message Received";
 
 // prepare email body text
@@ -45,6 +52,9 @@ $Body .= $email;
 $Body .= "\n";
 $Body .= "Subject: ";
 $Body .= $msg_subject;
+$Body .= "\n";
+$Body .= "Project: ";
+$Body .= $project;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
