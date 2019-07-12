@@ -16,14 +16,14 @@ function submitForm(){
     var name = $("#name").val();
     var email = $("#email").val();
     var msg_subject = $("#msg_subject").val();
-    var budget = $("#budget").val();
+    var phone = $("#phone").val();
     var message = $("#message").val();
 
 
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&budget=" + budget + "&message=" + message,
+        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone=" + phone + "&message=" + message,
         success : function(text){
             if (text == "success"){
                 formSuccess();

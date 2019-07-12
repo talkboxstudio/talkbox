@@ -6,40 +6,18 @@
   ========================================================*/
   $('#preloader').fadeOut();
 
-  /* Testimonials Carousel 
-  ========================================================*/
-  var owl = $("#client-testimonial");
-    owl.owlCarousel({
-      navigation: true,
-      pagination: false,
-      slideSpeed: 1000,
-      stopOnHover: true,
-      autoPlay: true,
-      items: 1,
-      animateIn: 'fadeIn',
-      animateOut: 'fadeOut',
-      addClassActive: true,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [980,1],
-      itemsTablet: [768,1],
-      itemsTablet: [767,1],
-      itemsTabletSmall: [480,1],
-      itemsMobile : [479,1],
-    });   
-    $('#client-testimonial').find('.owl-prev').html('<i class="lni-chevron-left"></i>');
-    $('#client-testimonial').find('.owl-next').html('<i class="lni-chevron-right"></i>');
 
-
-    /* showcase Slider
+    /* Screens Shot Slider
     =============================*/
-     var owl = $(".showcase-slider");
+     var owl = $(".touch-slider");
       owl.owlCarousel({
+        center: true,
         navigation: false,
         pagination: true,
         slideSpeed: 1000,
-        margin:10,
         stopOnHover: true,
         autoPlay: true,
+        touchDrag: true,
         items: 5,
         itemsDesktopSmall: [1024, 3],
         itemsTablet: [600, 1],
@@ -59,17 +37,7 @@
         }
     });
 
-  /* 
- VIDEO POP-UP
- ========================================================================== */
-  $('.video-popup').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false,
-  });
+
 
   /* 
    Back Top Link
@@ -93,9 +61,8 @@
     })
 
   /* 
-   One Page Navigation
+   One Page Navigation & wow js
    ========================================================================== */
-
 
     $(window).on('load', function() {
        
