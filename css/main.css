@@ -1383,8 +1383,14 @@ border: 5px solid #ffffff;}
 /* ==========================================================================
    Contact section
    ========================================================================== */
-#contact form#contactForm .form-group {
-  margin-bottom: 30px; }
+#contactform{
+  margin-bottom: 30px;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	width:75%;
+	margin: auto;}
 
 #contact form#contactForm input[type=text], #contact form#contactForm input[type=email] {
   min-height: 52px;
@@ -1403,12 +1409,13 @@ border: 5px solid #ffffff;}
   box-shadow: none;
   background: #e5fff3; }
 
+
 /* ==========================================================================
    Footer section
    ========================================================================== */
 #footer-Content {
-  padding-top: 0px;
-  background: #ffffff; }
+  margin-top: 70px;
+  background: #ffffff;}
   #footer-Content .footer-logo img {
     padding-top: 0px; }
   #footer-Content .form-control:focus {
@@ -1420,7 +1427,7 @@ border: 5px solid #ffffff;}
     padding-top: 30px;
     padding-bottom: 30px; }
     #footer-Content .copyright p {
-      color: #d7f626;
+      color: #fff00;
       font-size: 18px; }
     #footer-Content .copyright a {
       color: #ddd; }
